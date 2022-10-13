@@ -497,6 +497,10 @@ var _Header = __webpack_require__(4);
 
 var _Header2 = _interopRequireDefault(_Header);
 
+var _MainContent = __webpack_require__(16);
+
+var _MainContent2 = _interopRequireDefault(_MainContent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
@@ -504,55 +508,17 @@ Challenge: move the Footer and MainContent components
 into their own files.
 */
 
-function Footer() {
-    return _react2.default.createElement(
-        "footer",
-        null,
-        _react2.default.createElement(
-            "small",
-            null,
-            "\xA9 2021 Ziroll development. All rights reserved."
-        )
-    );
-}
-
-function MainContent() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-            "h1",
-            null,
-            "Reasons I'm excited to learn React"
-        ),
-        _react2.default.createElement(
-            "ol",
-            null,
-            _react2.default.createElement(
-                "li",
-                null,
-                "It's a popular library, so I'll be able to fit in with the cool kids!"
-            ),
-            _react2.default.createElement(
-                "li",
-                null,
-                "I'm more likely to get a job as a developer if I know React"
-            )
-        )
-    );
-}
-
 function Page() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(MainContent, null),
-        _react2.default.createElement(Footer, null)
-    );
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(_Header2.default, null),
+		_react2.default.createElement(_MainContent2.default, null),
+		_react2.default.createElement(Footer, null)
+	);
 }
 
-_reactDom2.default.render(_react2.default.createElement(Page, null), document.getElementById("root"));
+_reactDom2.default.render(_react2.default.createElement(Page, null), document.getElementById('root'));
 
 /***/ }),
 /* 7 */
@@ -30565,6 +30531,51 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MainContent() {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			'h1',
+			null,
+			'Reasons I\'m excited to learn React'
+		),
+		_react2.default.createElement(
+			'ol',
+			null,
+			_react2.default.createElement(
+				'li',
+				null,
+				'It\'s a popular library, so I\'ll be able to fit in with the cool kids!'
+			),
+			_react2.default.createElement(
+				'li',
+				null,
+				'I\'m more likely to get a job as a developer if I know React'
+			)
+		)
+	);
+}
+
+exports.default = MainContent;
 
 /***/ })
 /******/ ]);
